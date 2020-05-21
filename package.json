@@ -1,0 +1,45 @@
+{
+    "name": "Slider",
+    "version": "1.0.0",
+    "description": "Job interview task  ",
+    "main": "./dist/index.html",
+    "dependencies": {
+        "webpack-cli": "^3.3.11"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "autoprefixer": "^9.8.0",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^3.5.2",
+        "file-loader": "^6.0.0",
+        "html-webpack-plugin": "^4.2.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.13.1",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.2",
+        "script-loader": "^0.7.2",
+        "style-loader": "^1.1.3",
+        "webpack": "^4.42.1",
+        "webpack-dev-server": "^3.11.0"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --open",
+        "build": "webpack --mode production",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MarcinSufa/slider"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "author": "Marcin Sufa",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MarcinSufa/slider/issues"
+    },
+    "homepage": "https://github.com/MarcinSufa/slider/dist"
+}
