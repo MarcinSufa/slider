@@ -1,0 +1,57 @@
+html,
+body {
+    position: relative;
+    // height: 300vh;
+}
+// body {
+//     background: #000;
+//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     color: #000;
+//     margin: 0;
+//     padding: 0;
+// }
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 600px;
+    width: 100%;
+}
+.gallery-thumbs {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 200px;
+    height: 100%;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+// .slider-click {
+//     height: 150px;
+//     width: 150px;
+//     background-color: red;
+// }
+
+// .swiper-wrapper {
+//     display: flex;
+//     overflow: hidden;
+// }
+
+// .swiper-portraits {
+//     display: flex;
+//     overflow: hidden;
+//     height: 500px;
+// }
