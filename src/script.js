@@ -2,7 +2,6 @@ import sliderBcgImgUrl from './assets/slider-bcg.jpg';
 // import { Swiper, Navigation, Pagination, Scrollbar, EffectCoverflow } from 'swiper/dist/js/swiper.esm.js';
 
 export default function () {
-    // const section = document.createElement('section');
     // const img = document.createElement('img');
     // img.src = sliderBcgImgUrl;
     // section.appendChild(img);

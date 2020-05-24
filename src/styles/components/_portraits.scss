@@ -1,0 +1,33 @@
+.team {
+    &__portraits {
+        &--wrapper {
+            display: flex;
+            justify-content: center;
+            background-repeat: repeat;
+            background-blend-mode: hard-light;
+            background-color: lightgray;
+        }
+        &--container {
+            margin-top: 3rem;
+            height: 30rem;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+        &--portrait {
+            flex: 1 0 20%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &--photo {
+            height: 150px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.active {
+    transform: scale(1.2);
+}
