@@ -1,0 +1,19 @@
+.email {
+    &__container {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        right: 20%;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+    }
+    &__img {
+        height: 15px;
+        width: 15px;
+    }
+}

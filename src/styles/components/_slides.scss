@@ -3,11 +3,20 @@
     height: 300px;
     margin-left: auto;
     margin-right: auto;
+    display: none;
 }
+
+.swiper-container {
+    &-opened {
+        display: block;
+    }
+}
+
 .swiper-slide {
     background-size: cover;
     background-position: center;
 }
+
 .gallery-top {
     height: 600px;
     width: 100%;
@@ -26,34 +35,75 @@
     opacity: 1;
 }
 
-// .slider-click {
-//     height: 150px;
-//     width: 150px;
-//     background-color: red;
-// }
-
-// .swiper-wrapper {
-//     display: flex;
-//     overflow: hidden;
-// }
-
-// .swiper-portraits {
-//     display: flex;
-//     overflow: hidden;
-//     height: 500px;
-// }
-
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
     top: 50%;
     z-index: 9999;
+    img {
+        height: 5rem;
+        width: 5rem;
+        @media (max-width: 650px) {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+    cursor: pointer;
 }
 
 .swiper-button-next {
     right: 0;
+    transform: translate(0, -50%);
 }
 
 .swiper-button-prev {
     left: 0;
+    transform: translate(0, -50%);
+}
+
+.swiper-button-close {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.slider__inner {
+    border: rgba(146, 214, 227, 0.6) 4px dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+
+    &--position {
+        color: $color-white;
+        @include mainFont;
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 1rem;
+        @media (max-width: 650px) {
+            font-size: 2rem;
+        }
+    }
+
+    &--title {
+        color: $color-white;
+        @include mainFont;
+        font-size: 5rem;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: -1px 2px 2px rgba(79, 33, 33, 0.97);
+        @media (max-width: 650px) {
+            font-size: 3rem;
+        }
+    }
 }

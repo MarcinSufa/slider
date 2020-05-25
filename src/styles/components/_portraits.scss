@@ -3,6 +3,8 @@
         &--wrapper {
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
             background-repeat: repeat;
             background-blend-mode: hard-light;
             background-color: lightgray;
@@ -20,14 +22,65 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        &--photo--wrap {
+            border-radius: 50%;
+            height: 151px;
+            width: 151px;
+            background-color: $color-primary;
+            overflow: hidden;
         }
         &--photo {
             height: 150px;
             border-radius: 50%;
+            filter: opacity(0.3) grayscale(1) contrast(1.2);
+            transition: filter 0.4s ease-in-out;
+            transform: translate(0, 0) scale(1.08);
+            &:hover {
+                filter: none;
+                transition: filter 0.4s ease-in-out;
+                cursor: pointer;
+            }
+        }
+        &--header {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 1rem;
+            @include mainFont;
+            font-size: 3rem;
+            font-weight: 600;
+            color: $color-secondary;
+            text-align: center;
+        }
+        &--title {
+            color: $color-secondary;
+            margin: 0.5rem;
+            @include mainFont;
+            font-weight: 400;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        &--position {
+            color: $color-primary;
+            margin-bottom: 0.4rem;
+            @include mainFont;
+            font-weight: 300;
+            font-size: 1rem;
+            text-align: center;
+        }
+        &--city {
+            @include mainFont;
+            font-weight: 300;
+            font-size: 0.8rem;
+            color: $color-dark;
+            text-align: center;
         }
     }
 }
 
 .active {
-    transform: scale(1.2);
+    filter: none;
+    transition: filter 0.4s ease-in-out;
 }
